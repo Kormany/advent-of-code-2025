@@ -7,13 +7,13 @@ import java.io.IOException;
 public class Day01 {
     private static final int DIAL_SIZE = 100;
     private static final int START_POSITION = 50;
-    private static final String INPUT = "inputs/day01.txt";
+    private static final String PATH = "inputs/day01.txt";
 
-    public static int solvePart1() {
+    public static int part1() {
         int dialPosition = START_POSITION;
         int password = 0;
 
-        try (BufferedReader br = new BufferedReader(new FileReader(INPUT))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(PATH))) {
             String line;
             while ((line = br.readLine()) != null) {
                 int distance = Integer.parseInt(line.substring(1));
@@ -32,11 +32,11 @@ public class Day01 {
         return password;
     }
 
-    public static int solvePart2() {
+    public static int part2() {
         int dialPosition = START_POSITION;
         int password = 0;
 
-        try (BufferedReader br = new BufferedReader(new FileReader(INPUT))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(PATH))) {
             String line;
             while ((line = br.readLine()) != null) {
                 int distance = Integer.parseInt(line.substring(1));

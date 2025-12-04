@@ -1,13 +1,10 @@
-# Advent of Code 2025 🧩
-
-[![Java](https://img.shields.io/badge/Language-Java-blue.svg)](https://www.java.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+# Advent of Code 2025
 
 This repository contains my **Java solutions** for [Advent of Code 2025](https://adventofcode.com/2025).
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 advent-of-code-2025/
@@ -30,7 +27,7 @@ advent-of-code-2025/
 
 ---
 
-## 🚀 Usage
+## Usage
 
 1. **Compile** all Java files:
 
@@ -48,6 +45,6 @@ java Main
 
 ---
 
-## 🔗 Links
+## Links
 
 * [Advent of Code 2025](https://adventofcode.com/2025) – Official website
