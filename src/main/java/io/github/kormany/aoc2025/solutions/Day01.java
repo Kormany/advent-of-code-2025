@@ -3,7 +3,6 @@ package io.github.kormany.aoc2025.solutions;
 import java.util.List;
 
 public class Day01 {
-
     private static final int DIAL_SIZE = 100;
     private static final int START_POSITION = 50;
 

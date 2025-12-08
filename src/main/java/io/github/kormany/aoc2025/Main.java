@@ -1,14 +1,13 @@
 package io.github.kormany.aoc2025;
 
-import io.github.kormany.aoc2025.solutions.Day01;
+import io.github.kormany.aoc2025.solutions.*;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-
         Object[] days = {
                 new Day01(),
-//                new Day02(),
+                new Day02(),
 //                new Day03(),
 //                new Day04(),
 //                new Day05(),
