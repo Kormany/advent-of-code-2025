@@ -17,8 +17,7 @@ public class Day02 {
             for (String range : ranges) {
                 long[] bounds = parseRange(range);
                 for (long i = bounds[0]; i <= bounds[1]; i++) {
-                    String digits = String.valueOf(i);
-                    if (digits.length() % 2 == 0 && hasEqualHalves(digits)) {
+                    if (hasEqualHalves(i)) {
                         sumInvalidIDs += i;
                     }
                 }
@@ -52,9 +51,22 @@ public class Day02 {
         return new long[]{Long.parseLong(parts[0]), Long.parseLong(parts[1])};
     }
 
-    private boolean hasEqualHalves(String digits) {
-        int half = digits.length() / 2;
-        return digits.substring(0, half).equals(digits.substring(half));
+    private boolean hasEqualHalves(long n) {
+        long copy = n;
+        int len = 0;
+        while (copy > 0) {
+            len++;
+            copy /= 10;
+        }
+        if (len % 2 != 0) return false;
+
+        long divisor = 1;
+        for (int i = 0; i < len / 2; i++) divisor *= 10;
+
+        long firstHalf = n / divisor;
+        long secondHalf = n % divisor;
+
+        return firstHalf == secondHalf;
     }
 
     private boolean isInvalidID(String s) {
