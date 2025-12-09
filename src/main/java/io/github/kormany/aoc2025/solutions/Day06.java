@@ -33,7 +33,7 @@ public class Day06 {
         problems = rotateLeft(problems);
         long sumAnswers = 0;
         StringBuilder sb = new StringBuilder();
-        ArrayList<String> problem = new ArrayList<String>();
+        ArrayList<String> problem = new ArrayList<>();
         for (char[] chars : problems) {
             sb.delete(0, sb.length());
             for (int j = 0; j < chars.length; j++) {
