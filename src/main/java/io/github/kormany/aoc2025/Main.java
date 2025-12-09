@@ -5,6 +5,9 @@ import io.github.kormany.aoc2025.solutions.*;
 public class Main {
 
     public static void main(String[] args) throws Exception {
+
+        long totalStart = System.nanoTime();
+
         Object[] days = {
                 new Day01(),
                 new Day02(),
@@ -36,5 +39,12 @@ public class Main {
             long end2 = System.nanoTime();
             System.out.printf("> Part 2: %s (%.3f ms)%n", result2, (end2 - start2) / 1_000_000.0);
         }
+
+        long totalEnd = System.nanoTime();
+        double totalMs = (totalEnd - totalStart) / 1_000_000.0;
+
+        System.out.printf("%n=================================%n");
+        System.out.printf("Total execution time: %.3f ms%n", totalMs);
+        System.out.printf("=================================%n");
     }
 }

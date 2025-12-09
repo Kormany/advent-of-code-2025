@@ -3,7 +3,6 @@ package io.github.kormany.aoc2025.solutions;
 import java.util.*;
 
 import static java.lang.Math.pow;
-import static java.lang.Math.sqrt;
 
 public class Day08 {
     private static class Box {
@@ -134,7 +133,7 @@ public class Day08 {
     }
 
     private static double distance(Box b1, Box b2) {
-        return sqrt(
+        return (
                 pow(b2.x - b1.x, 2) +
                 pow(b2.y - b1.y, 2) +
                 pow(b2.z - b1.z, 2)
