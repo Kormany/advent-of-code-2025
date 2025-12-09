@@ -74,9 +74,9 @@ public class Day08 {
 
     public int part2() {
         Box[] boxes = getBoxes();
+        int countBoxes = new HashSet<>(Arrays.asList(boxes)).size();
         ArrayList<Distance> distances = getDistances(boxes);
         distances.sort(Comparator.comparingDouble(d -> d.distance));
-        HashSet<Box> all = new HashSet<>(Arrays.asList(boxes));
         ArrayList<HashSet<Box>> connections = new ArrayList<>();
 
         for (Distance distance : distances) {
@@ -99,7 +99,7 @@ public class Day08 {
             connections.add(connection);
             connections.sort(Comparator.comparingInt((HashSet<Box> c)
                     -> c.size()).reversed());
-            if (connections.getFirst().size() == all.size()) {
+            if (connections.getFirst().size() == countBoxes) {
                 return b1.x * b2.x;
             }
         }
