@@ -22,7 +22,7 @@ public class Day09 {
         int[][] corners = getCorners();
         Polygon poly = new Polygon(corners);
 
-        long best = 0;
+        long largest = 0;
 
         for (int i = 0; i < corners.length; i++) {
             for (int j = i + 1; j < corners.length; j++) {
@@ -43,11 +43,11 @@ public class Day09 {
                 if (!poly.rectangleFullyInside(lx, ly, hx, hy)) continue;
 
                 long area = (long) (hx - lx + 1) * (hy - ly + 1);
-                if (area > best) best = area;
+                if (area > largest) largest = area;
             }
         }
 
-        return best;
+        return largest;
     }
 
     private int[][] getCorners() {
