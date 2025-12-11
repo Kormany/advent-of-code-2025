@@ -5,7 +5,6 @@ import io.github.kormany.aoc2025.solutions.*;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-
         long totalStart = System.nanoTime();
 
         Object[] days = {
@@ -18,7 +17,7 @@ public class Main {
                 new Day07(),
                 new Day08(),
                 new Day09(),
-//                new Day10(),
+                new Day10(),
 //                new Day11(),
 //                new Day12()
         };
