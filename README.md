@@ -63,5 +63,5 @@ mvn exec:java '-Dexec.mainClass=io.github.kormany.aoc2025.Main'
 
 ---
 
-## 🔗 Links
+## Links
 * [Advent of Code 2025](https://adventofcode.com/2025) – Official website
