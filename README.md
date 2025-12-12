@@ -38,8 +38,8 @@ advent-of-code-2025/
 ```
 
 * `Main.java` – runs all solutions sequentially
-* `src/main/java/io/github/kormany/aoc2025/solutions/DayXX.java` – solution for the challenges of the given day
-* `InputReader.java` – utility for reading puzzle input files
+* `solutions/DayXX.java` – solution for the challenges of the given day
+* `solutions/InputReader.java` – utility for reading puzzle input files
 * `inputs/dayXX.txt` – puzzle input files
 ---
 
