@@ -83,7 +83,7 @@ public class Day10 {
 
             for (int i = 0; i < numButtons; i++) {
                 press[i] = ctx.mkIntConst("press_" + i);
-                opt.Add(ctx.mkGe(press[i], ctx.mkInt(0))); // press >= 0
+                opt.Add(ctx.mkGe(press[i], ctx.mkInt(0)));
             }
 
             for (int c = 0; c < numCounters; c++) {
@@ -130,7 +130,8 @@ public class Day10 {
         return 0;
     }
 
-    private static boolean generate(int[][] buttons, int r, int start, List<int[]> current, int[] target) {
+    private static boolean generate(int[][] buttons, int r, int start,
+                                    List<int[]> current, int[] target) {
         if (current.size() == r) {
             int[] state = new int[target.length];
             for (int[] button : current) {

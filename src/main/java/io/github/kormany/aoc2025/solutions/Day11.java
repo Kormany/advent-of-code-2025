@@ -86,13 +86,10 @@ public class Day11 {
                           long[] memo) {
 
         if (current == target) return 1;
-
         if (!visited.get(current) && memo[current] != -1)
             return memo[current];
-
         if (visited.get(current))
-            return 0; // cycle avoid
-
+            return 0;
         visited.set(current);
 
         long sum = 0;
