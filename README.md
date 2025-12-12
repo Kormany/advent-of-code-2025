@@ -40,7 +40,7 @@ advent-of-code-2025/
 * `Main.java` – runs all solutions sequentially
 * `solutions/DayXX.java` – solution for the challenges of the given day
 * `solutions/InputReader.java` – utility for reading puzzle input files
-* `inputs/dayXX.txt` – puzzle input files
+* `inputs/dayXX.txt` – puzzle input file
 ---
 
 ## Goals
