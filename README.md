@@ -14,14 +14,14 @@ In 2025, the event runs from **December 1 to 12**, delivering 23 algorithmic cha
 
 ```
 advent-of-code-2025/
-├── inputs/
-│   ├── day01.txt
-│   ├── day02.txt
-│   ├── ...
-│   └── day12.txt
-│
 ├── src/
 │   └── main/
+│       ├── inputs/
+│       │   ├── day01.txt
+│       │   ├── day02.txt
+│       │   ├── ...
+│       │   └── day12.txt
+│       │
 │       └── java/
 │           └── io/github/kormany/aoc2025/
 │               ├── Main.java
@@ -58,7 +58,7 @@ mvn compile
 ```
 2. **Run:**
 ```bash
-mvn exec:java -Dexec.mainClass="io.github.kormany/aoc2025/Main"
+mvn exec:java '-Dexec.mainClass=io.github.kormany.aoc2025.Main'
 ```
 
 ---
