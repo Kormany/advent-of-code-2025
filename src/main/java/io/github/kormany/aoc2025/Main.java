@@ -19,7 +19,7 @@ public class Main {
                 new Day09(),
                 new Day10(),
                 new Day11(),
-//                new Day12()
+                new Day12()
         };
 
         for (int i = 0; i < days.length; i++) {
